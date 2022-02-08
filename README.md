@@ -1,6 +1,5 @@
 # LeafTextField
 
-[![CI Status](https://img.shields.io/travis/46310414/LeafTextField.svg?style=flat)](https://travis-ci.org/46310414/LeafTextField)
 [![Version](https://img.shields.io/cocoapods/v/LeafTextField.svg?style=flat)](https://cocoapods.org/pods/LeafTextField)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
@@ -23,8 +22,22 @@ textField.springAnimation = true
 
 ## Requirements
 
+- iOS 13.0
+- Swift 5
+
 ## Installation
 
+### Swift Package Manager 
+```
+https://github.com/urijan44/LeafTextField.git
+```
+
+### Carthage
+```
+github "urijan44/LeafTextField"
+```
+
+### CocoaPods
 LeafTextField is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -34,7 +47,7 @@ pod 'LeafTextField'
 
 ## Author
 
-teamsva360@gmail.com
+HenryLee: teamsva360@gmail.com
 
 ## License
 
