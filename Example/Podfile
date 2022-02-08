@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LeafTextField_Example' do
+  pod 'LeafTextField', :path => '../'
+
+  target 'LeafTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

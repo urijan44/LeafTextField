@@ -1,0 +1,29 @@
+# LeafTextField
+
+[![CI Status](https://img.shields.io/travis/46310414/LeafTextField.svg?style=flat)](https://travis-ci.org/46310414/LeafTextField)
+[![Version](https://img.shields.io/cocoapods/v/LeafTextField.svg?style=flat)](https://cocoapods.org/pods/LeafTextField)
+[![License](https://img.shields.io/cocoapods/l/LeafTextField.svg?style=flat)](https://cocoapods.org/pods/LeafTextField)
+[![Platform](https://img.shields.io/cocoapods/p/LeafTextField.svg?style=flat)](https://cocoapods.org/pods/LeafTextField)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+LeafTextField is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'LeafTextField'
+```
+
+## Author
+
+46310414, teamsva360@gmail.com
+
+## License
+
+LeafTextField is available under the MIT license. See the LICENSE file for more info.
