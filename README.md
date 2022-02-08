@@ -9,7 +9,17 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```Swift
+@IBOutlet weak var textField: LeafTextField!
+
+textField.setImage(UIImage(named: "pikases"), UIImage(named: "pikases-leaf"))
+textField.imageSize = 24
+textField.animationSpeed = 0.5
+textField.springAnimation = true
+```
+
+![](preview.gif)
+
 
 ## Requirements
 
