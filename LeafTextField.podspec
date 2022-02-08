@@ -24,12 +24,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'LeafTextField/Classes/**/*'
-  
-  s.resource_bundles = {
-    'LeafTextField' => ['LeafTextField/Assets/*.png']
-  }
-
-  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.swift_version = '5.0'
 end
