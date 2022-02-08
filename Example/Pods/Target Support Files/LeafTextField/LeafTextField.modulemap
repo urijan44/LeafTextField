@@ -1,0 +1,6 @@
+framework module LeafTextField {
+  umbrella header "LeafTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

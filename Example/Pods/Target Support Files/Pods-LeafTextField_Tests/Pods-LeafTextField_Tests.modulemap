@@ -1,0 +1,6 @@
+framework module Pods_LeafTextField_Tests {
+  umbrella header "Pods-LeafTextField_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

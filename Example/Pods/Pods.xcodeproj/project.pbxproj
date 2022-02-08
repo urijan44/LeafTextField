@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0575802DE941E54974B41B09DC59A46B /* LeafTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA9C5C8B3F55CE4EE1EF012E9C12C8 /* LeafTextField.swift */; };
+		1CB53E16019398D871BBD2D8F11FC4B0 /* Pods-LeafTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E9E147876B8A01D2F9E7F16A484C68 /* Pods-LeafTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2564B70FF6868CF4680A6FE323D8B5C1 /* LeafTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8593A4039F4E835BD94711A6BDDDE7EE /* LeafTextField-dummy.m */; };
+		4FD958AA43B4820EBA4BDBED535EB745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77677E16571D721145BE4CDE5729A877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		776E594FE0BC05600E87D2101605F84B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		82956F8FE59058C2101EA5BC6D46E9A2 /* LeafTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4E6C512B6FDC543897C6D39487E426 /* LeafTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF11CB9138926B2B04A95D096465E3DB /* Pods-LeafTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A855D907DB8273305B9A1ADD0216C /* Pods-LeafTextField_Example-dummy.m */; };
+		D11FFF0ABA439F4D7602861AB2B0907B /* Pods-LeafTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CAA41436FE37850D77895F0CD4BE34 /* Pods-LeafTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2FE97C119A80ACE01123395D64A5B5E /* Pods-LeafTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77D76A5D6C92EC27B1107D08CB9C7B /* Pods-LeafTextField_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0771F612F6C34D1D36B4157F12217627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B94E8280CCE0FDA8E73B3FF89ED309;
+			remoteInfo = LeafTextField;
+		};
+		9E4B7B824AEE94143AB0830EB32E3878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85DC0B21661AFFA8FDB1D669F0752EEB;
+			remoteInfo = "Pods-LeafTextField_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AA4CE393984825A285977A24E1E6C5 /* Pods-LeafTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeafTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		02E5A6C5FC00104B28DD70F7D999358D /* Pods-LeafTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeafTextField_Example.modulemap"; sourceTree = "<group>"; };
+		0A004D0F92F615D2923054A18ADF8A29 /* Pods-LeafTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeafTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18CAA41436FE37850D77895F0CD4BE34 /* Pods-LeafTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeafTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		19810E1103247BB90A815E1231F84BDF /* Pods-LeafTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeafTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1A21FE47EA4BED1C286442ED2EB70E04 /* Pods-LeafTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeafTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		1D85A7301CB30B4F51D3197243936A1B /* LeafTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeafTextField.release.xcconfig; sourceTree = "<group>"; };
+		37C9F5CEF076520B2F34AC4CCE52C8FF /* Pods-LeafTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeafTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4A894FE996568AE663DCE417576877B2 /* LeafTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LeafTextField-Info.plist"; sourceTree = "<group>"; };
+		4D77D76A5D6C92EC27B1107D08CB9C7B /* Pods-LeafTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeafTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		5C4E6C512B6FDC543897C6D39487E426 /* LeafTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeafTextField-umbrella.h"; sourceTree = "<group>"; };
+		69E9E147876B8A01D2F9E7F16A484C68 /* Pods-LeafTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeafTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74F0922D66C0607AB25EDC638B175A86 /* LeafTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LeafTextField.modulemap; sourceTree = "<group>"; };
+		7D3A6BA0A1889C5010F154329F559E62 /* Pods_LeafTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeafTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8593A4039F4E835BD94711A6BDDDE7EE /* LeafTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeafTextField-dummy.m"; sourceTree = "<group>"; };
+		874F44FC3FA8496492604A6502A6AF59 /* LeafTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeafTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92097E78FB9ED4A18BB4383ECFE51290 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		963BE5C93FEE6CF0A9D9E4346AD5DCEA /* Pods-LeafTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeafTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A37C84A27DC147042494718C6512ABC8 /* Pods-LeafTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeafTextField_Tests-Info.plist"; sourceTree = "<group>"; };
+		A473F04A9903266C033A109D1EEFB0FC /* Pods_LeafTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeafTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A585FC4090972C28DD393D66E0440056 /* Pods-LeafTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeafTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC23B8DBC95D84035672DF9D6FD31C21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B8A352818074C6198BF3009FDBEDC615 /* Pods-LeafTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeafTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CC3E7EC29777F9ADF672AAAF66DD5947 /* LeafTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeafTextField-prefix.pch"; sourceTree = "<group>"; };
+		D8BD25CE6BAD48FCFCE87060D9F4B76F /* Pods-LeafTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeafTextField_Example-Info.plist"; sourceTree = "<group>"; };
+		DA3A855D907DB8273305B9A1ADD0216C /* Pods-LeafTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeafTextField_Example-dummy.m"; sourceTree = "<group>"; };
+		DB42724557A4D847E294463F2E2DB8C8 /* LeafTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LeafTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E44A3A9061EA2066D4A6EB4E7ADF69A8 /* Pods-LeafTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeafTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E848F6CEB4718D961CF63EED6B0116CD /* LeafTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeafTextField.debug.xcconfig; sourceTree = "<group>"; };
+		E8CA9C5C8B3F55CE4EE1EF012E9C12C8 /* LeafTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeafTextField.swift; path = LeafTextField/Classes/LeafTextField.swift; sourceTree = "<group>"; };
+		F85B29A1901FFED02C183AE61E7D9FBE /* Pods-LeafTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeafTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C74F5439982F56F6F66C3CED03E7CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77677E16571D721145BE4CDE5729A877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24452E94A541A5B95358A402113B760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776E594FE0BC05600E87D2101605F84B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC6A411D5152586CD47D112A6D0D14E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD958AA43B4820EBA4BDBED535EB745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ADCBEA512DCCF66A3732DE38061C937 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F0922D66C0607AB25EDC638B175A86 /* LeafTextField.modulemap */,
+				8593A4039F4E835BD94711A6BDDDE7EE /* LeafTextField-dummy.m */,
+				4A894FE996568AE663DCE417576877B2 /* LeafTextField-Info.plist */,
+				CC3E7EC29777F9ADF672AAAF66DD5947 /* LeafTextField-prefix.pch */,
+				5C4E6C512B6FDC543897C6D39487E426 /* LeafTextField-umbrella.h */,
+				E848F6CEB4718D961CF63EED6B0116CD /* LeafTextField.debug.xcconfig */,
+				1D85A7301CB30B4F51D3197243936A1B /* LeafTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeafTextField";
+			sourceTree = "<group>";
+		};
+		0CEB0C90231BE760C8D7D83034663CE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874F44FC3FA8496492604A6502A6AF59 /* LeafTextField.framework */,
+				A473F04A9903266C033A109D1EEFB0FC /* Pods_LeafTextField_Example.framework */,
+				7D3A6BA0A1889C5010F154329F559E62 /* Pods_LeafTextField_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34CDEDCC05E11F79E9928C496B9723DE /* Pods-LeafTextField_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A21FE47EA4BED1C286442ED2EB70E04 /* Pods-LeafTextField_Tests.modulemap */,
+				0A004D0F92F615D2923054A18ADF8A29 /* Pods-LeafTextField_Tests-acknowledgements.markdown */,
+				F85B29A1901FFED02C183AE61E7D9FBE /* Pods-LeafTextField_Tests-acknowledgements.plist */,
+				4D77D76A5D6C92EC27B1107D08CB9C7B /* Pods-LeafTextField_Tests-dummy.m */,
+				A37C84A27DC147042494718C6512ABC8 /* Pods-LeafTextField_Tests-Info.plist */,
+				69E9E147876B8A01D2F9E7F16A484C68 /* Pods-LeafTextField_Tests-umbrella.h */,
+				00AA4CE393984825A285977A24E1E6C5 /* Pods-LeafTextField_Tests.debug.xcconfig */,
+				A585FC4090972C28DD393D66E0440056 /* Pods-LeafTextField_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeafTextField_Tests";
+			path = "Target Support Files/Pods-LeafTextField_Tests";
+			sourceTree = "<group>";
+		};
+		42293A41921DDC2C751A8DCC0F2D3BBB /* LeafTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA9C5C8B3F55CE4EE1EF012E9C12C8 /* LeafTextField.swift */,
+				D074E65B8DA33571B36DC7B1F3E54DD0 /* Pod */,
+				0ADCBEA512DCCF66A3732DE38061C937 /* Support Files */,
+			);
+			name = LeafTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63CB5F2560BC1E0D9DAE91AAC9E7807E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42293A41921DDC2C751A8DCC0F2D3BBB /* LeafTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		66031DE4E84566D3716CEFE2B727B3EA /* Pods-LeafTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				02E5A6C5FC00104B28DD70F7D999358D /* Pods-LeafTextField_Example.modulemap */,
+				963BE5C93FEE6CF0A9D9E4346AD5DCEA /* Pods-LeafTextField_Example-acknowledgements.markdown */,
+				E44A3A9061EA2066D4A6EB4E7ADF69A8 /* Pods-LeafTextField_Example-acknowledgements.plist */,
+				DA3A855D907DB8273305B9A1ADD0216C /* Pods-LeafTextField_Example-dummy.m */,
+				B8A352818074C6198BF3009FDBEDC615 /* Pods-LeafTextField_Example-frameworks.sh */,
+				D8BD25CE6BAD48FCFCE87060D9F4B76F /* Pods-LeafTextField_Example-Info.plist */,
+				18CAA41436FE37850D77895F0CD4BE34 /* Pods-LeafTextField_Example-umbrella.h */,
+				19810E1103247BB90A815E1231F84BDF /* Pods-LeafTextField_Example.debug.xcconfig */,
+				37C9F5CEF076520B2F34AC4CCE52C8FF /* Pods-LeafTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-LeafTextField_Example";
+			path = "Target Support Files/Pods-LeafTextField_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				63CB5F2560BC1E0D9DAE91AAC9E7807E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0CEB0C90231BE760C8D7D83034663CE9 /* Products */,
+				ECE61EEDA2B7A42460C935FE72BC36F2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D074E65B8DA33571B36DC7B1F3E54DD0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DB42724557A4D847E294463F2E2DB8C8 /* LeafTextField.podspec */,
+				AC23B8DBC95D84035672DF9D6FD31C21 /* LICENSE */,
+				92097E78FB9ED4A18BB4383ECFE51290 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECE61EEDA2B7A42460C935FE72BC36F2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66031DE4E84566D3716CEFE2B727B3EA /* Pods-LeafTextField_Example */,
+				34CDEDCC05E11F79E9928C496B9723DE /* Pods-LeafTextField_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01AED559C1A005AB592EA6297C876BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB53E16019398D871BBD2D8F11FC4B0 /* Pods-LeafTextField_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589E2B5EDCE8B915953565FF6BD82B60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82956F8FE59058C2101EA5BC6D46E9A2 /* LeafTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC61728EE7CA2E87FE07B0ECC3744D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11FFF0ABA439F4D7602861AB2B0907B /* Pods-LeafTextField_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		829BA0A3439B92E3DF36F93086D3C242 /* Pods-LeafTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C38DDFD5BD55741D5E50B5B92C29787 /* Build configuration list for PBXNativeTarget "Pods-LeafTextField_Tests" */;
+			buildPhases = (
+				01AED559C1A005AB592EA6297C876BB6 /* Headers */,
+				D25EA5AD9164E927429F5F28AD6D0321 /* Sources */,
+				3C74F5439982F56F6F66C3CED03E7CBC /* Frameworks */,
+				D7497DF1F19DC2C2B8033149F57B1FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				877E60ECE6F0EFBFCDCC8A043743B5C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeafTextField_Tests";
+			productName = Pods_LeafTextField_Tests;
+			productReference = 7D3A6BA0A1889C5010F154329F559E62 /* Pods_LeafTextField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85DC0B21661AFFA8FDB1D669F0752EEB /* Pods-LeafTextField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA53B7A047DEC39755D996219AEC1D4 /* Build configuration list for PBXNativeTarget "Pods-LeafTextField_Example" */;
+			buildPhases = (
+				6EC61728EE7CA2E87FE07B0ECC3744D5 /* Headers */,
+				5EC34D7C8DC58C12D715E2833F97F1BE /* Sources */,
+				A24452E94A541A5B95358A402113B760 /* Frameworks */,
+				EA3E0A8F632F331E9BC5588EF94CF6A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8879408A9ADFB3B071C24311731F4B0D /* PBXTargetDependency */,
+			);
+			name = "Pods-LeafTextField_Example";
+			productName = Pods_LeafTextField_Example;
+			productReference = A473F04A9903266C033A109D1EEFB0FC /* Pods_LeafTextField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6B94E8280CCE0FDA8E73B3FF89ED309 /* LeafTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D448A26C892D4BFF51B473BA2F328829 /* Build configuration list for PBXNativeTarget "LeafTextField" */;
+			buildPhases = (
+				589E2B5EDCE8B915953565FF6BD82B60 /* Headers */,
+				68140BAA387BC3D66C64196D8941246A /* Sources */,
+				FBC6A411D5152586CD47D112A6D0D14E /* Frameworks */,
+				352169FDBA1509D7CEDA69B34CCB1393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeafTextField;
+			productName = LeafTextField;
+			productReference = 874F44FC3FA8496492604A6502A6AF59 /* LeafTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B6B94E8280CCE0FDA8E73B3FF89ED309 = {
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0CEB0C90231BE760C8D7D83034663CE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6B94E8280CCE0FDA8E73B3FF89ED309 /* LeafTextField */,
+				85DC0B21661AFFA8FDB1D669F0752EEB /* Pods-LeafTextField_Example */,
+				829BA0A3439B92E3DF36F93086D3C242 /* Pods-LeafTextField_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		352169FDBA1509D7CEDA69B34CCB1393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7497DF1F19DC2C2B8033149F57B1FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3E0A8F632F331E9BC5588EF94CF6A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EC34D7C8DC58C12D715E2833F97F1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF11CB9138926B2B04A95D096465E3DB /* Pods-LeafTextField_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68140BAA387BC3D66C64196D8941246A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2564B70FF6868CF4680A6FE323D8B5C1 /* LeafTextField-dummy.m in Sources */,
+				0575802DE941E54974B41B09DC59A46B /* LeafTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25EA5AD9164E927429F5F28AD6D0321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE97C119A80ACE01123395D64A5B5E /* Pods-LeafTextField_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		877E60ECE6F0EFBFCDCC8A043743B5C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LeafTextField_Example";
+			target = 85DC0B21661AFFA8FDB1D669F0752EEB /* Pods-LeafTextField_Example */;
+			targetProxy = 9E4B7B824AEE94143AB0830EB32E3878 /* PBXContainerItemProxy */;
+		};
+		8879408A9ADFB3B071C24311731F4B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeafTextField;
+			target = B6B94E8280CCE0FDA8E73B3FF89ED309 /* LeafTextField */;
+			targetProxy = 0771F612F6C34D1D36B4157F12217627 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		48292CA2917F1ECF98E7FFCEA6B8B0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E848F6CEB4718D961CF63EED6B0116CD /* LeafTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeafTextField/LeafTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeafTextField/LeafTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeafTextField/LeafTextField.modulemap";
+				PRODUCT_MODULE_NAME = LeafTextField;
+				PRODUCT_NAME = LeafTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B6059B913E4350A4F01F0A73E6EF9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D85A7301CB30B4F51D3197243936A1B /* LeafTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeafTextField/LeafTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeafTextField/LeafTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeafTextField/LeafTextField.modulemap";
+				PRODUCT_MODULE_NAME = LeafTextField;
+				PRODUCT_NAME = LeafTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3FBBAC5EC7795068E3895D3094A02FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00AA4CE393984825A285977A24E1E6C5 /* Pods-LeafTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeafTextField_Tests/Pods-LeafTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeafTextField_Tests/Pods-LeafTextField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCD3D9E8E01134F69E4E9F9A6652AB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C9F5CEF076520B2F34AC4CCE52C8FF /* Pods-LeafTextField_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeafTextField_Example/Pods-LeafTextField_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeafTextField_Example/Pods-LeafTextField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD91CB6679866E8724B1CDC9B18F5A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19810E1103247BB90A815E1231F84BDF /* Pods-LeafTextField_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeafTextField_Example/Pods-LeafTextField_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeafTextField_Example/Pods-LeafTextField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E238AA70F7351D0F386DECBD6D4540CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A585FC4090972C28DD393D66E0440056 /* Pods-LeafTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeafTextField_Tests/Pods-LeafTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeafTextField_Tests/Pods-LeafTextField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C38DDFD5BD55741D5E50B5B92C29787 /* Build configuration list for PBXNativeTarget "Pods-LeafTextField_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FBBAC5EC7795068E3895D3094A02FF /* Debug */,
+				E238AA70F7351D0F386DECBD6D4540CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA53B7A047DEC39755D996219AEC1D4 /* Build configuration list for PBXNativeTarget "Pods-LeafTextField_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD91CB6679866E8724B1CDC9B18F5A36 /* Debug */,
+				BCD3D9E8E01134F69E4E9F9A6652AB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D448A26C892D4BFF51B473BA2F328829 /* Build configuration list for PBXNativeTarget "LeafTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48292CA2917F1ECF98E7FFCEA6B8B0DC /* Debug */,
+				8B6059B913E4350A4F01F0A73E6EF9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

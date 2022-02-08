@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import LeafTextField
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var textField: LeafTextField!
+
+  override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    textField.delegate = self
+    textField.setImage(UIImage(named: "pikases"), UIImage(named: "pikases-leaf"))
+    textField.imageSize = 24
+    textField.animationSpeed = 0.5
+    textField.springAnimation = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
+extension ViewController: UITextFieldDelegate {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+  }
 }
 

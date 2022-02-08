@@ -22,7 +22,7 @@ pod 'LeafTextField'
 
 ## Author
 
-46310414, teamsva360@gmail.com
+teamsva360@gmail.com
 
 ## License
 

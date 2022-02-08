@@ -9,22 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'LeafTextField'
   s.version          = '0.1.0'
-  s.summary          = '`LeafTextField` is CustomTextField that contains Image and Animation.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'CustomTextField that contains Image and Animation.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  It is a simple TextField library with Image and Animation.
+                      DESC
 
-  s.homepage         = 'https://github.com/46310414/LeafTextField'
+  s.homepage         = 'https://github.com/urijan44/LeafTextField'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '46310414' => 'teamsva360@gmail.com' }
-  s.source           = { :git => 'https://github.com/46310414/LeafTextField.git', :tag => s.version.to_s }
+  s.author           = { 'HenryLee' => 'teamsva360@gmail.com' }
+  s.source           = { :git => 'https://github.com/urijan44/LeafTextField.git', :tag => s.version.to_s }
 
 
   s.ios.deployment_target = '13.0'
@@ -36,6 +30,6 @@ TODO: Add long description of the pod here.
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit',
-
+  s.frameworks = 'UIKit'
+  s.swift_version = '5.0'
 end

@@ -1,0 +1,16 @@
+PODS:
+  - LeafTextField (0.1.0)
+
+DEPENDENCIES:
+  - LeafTextField (from `../`)
+
+EXTERNAL SOURCES:
+  LeafTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LeafTextField: e84cd0ea4fcee12fb89fd04cfc524ae3dabf660c
+
+PODFILE CHECKSUM: 8084248adcfbc7db9f30b02e6442523eb1643566
+
+COCOAPODS: 1.11.2
