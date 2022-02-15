@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LeafTextField'
-  s.version          = '0.1.1'
+  s.version          = '0.2.1'
   s.summary          = 'CustomTextField that contains Image and Animation.'
 
   s.description      = <<-DESC
