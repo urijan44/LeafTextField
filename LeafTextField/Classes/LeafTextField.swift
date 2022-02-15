@@ -10,6 +10,37 @@ import UIKit
 @IBDesignable
 open class LeafTextField: UITextField {
 
+  private struct AnimationState {
+    enum State {
+      case inactive
+      case active
+    }
+
+    var state: State = .inactive
+    var withAnimate: Bool = true
+
+    mutating func runActive(withAnimate: Bool = true) {
+      state = .active
+      self.withAnimate = withAnimate
+    }
+
+    mutating func stopActive(withAnimate: Bool = true) {
+      state = .inactive
+      self.withAnimate = withAnimate
+    }
+  }
+
+  private var animationState = AnimationState() {
+    didSet {
+      switch animationState.state {
+        case .inactive:
+          inactiveAnimation(withAnimation: animationState.withAnimate)
+        case .active:
+          activeAnimation(withAnimation: animationState.withAnimate)
+      }
+    }
+  }
+
   private let imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
@@ -59,7 +90,6 @@ open class LeafTextField: UITextField {
     createView()
   }
 
-
   /// Set Image
   /// - Parameters:
   ///   - inactiveImage: UIImage Inactive Image
@@ -82,6 +112,7 @@ open class LeafTextField: UITextField {
     super.prepareForInterfaceBuilder()
     createView()
   }
+
   open override func willMove(toWindow newWindow: UIWindow?) {
     super.willMove(toWindow: newWindow)
     addTarget(self, action: #selector(didBeginEditing(_:)), for: .editingDidBegin)
@@ -103,7 +134,19 @@ open class LeafTextField: UITextField {
 
   open override func draw(_ rect: CGRect) {
     super.draw(rect)
+
     viewWidth = rect.width
+    updateAfterDraw()
+  }
+
+  private func updateAfterDraw() {
+    if let text = text,
+       (!text.isEmpty || isFirstResponder),
+       animationState.state == .inactive {
+      animationState.runActive(withAnimate: false)
+    } else if animationState.state == .active{
+      animationState.stopActive(withAnimate: false)
+    }
   }
 
   open override func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -119,10 +162,18 @@ open class LeafTextField: UITextField {
   }
 
   @objc private func didBeginEditing(_ sender: UITextField) {
+    animationState.runActive()
+  }
+
+  @objc private func didEndEditing(_ sneder: UITextField) {
+    animationState.stopActive()
+  }
+
+  private func activeAnimation(withAnimation: Bool = true) {
     guard imageViewCenterConstraint.constant == 0 else { return }
     imageViewCenterConstraint.constant = (viewWidth / 2) - (imageSize + trailingInset)
     UIView.animate(
-      withDuration: animationSpeed,
+      withDuration: withAnimation ? animationSpeed : 0,
       delay: 0,
       usingSpringWithDamping: springAnimation ? 0.7 : 1,
       initialSpringVelocity: springAnimation ? 0.8 : 1,
@@ -138,11 +189,11 @@ open class LeafTextField: UITextField {
     }
   }
 
-  @objc private func didEndEditing(_ sneder: UITextField) {
+  private func inactiveAnimation(withAnimation: Bool = true) {
     guard (text ?? "").isEmpty else { return }
     imageViewCenterConstraint.constant = 0
     UIView.animate(
-      withDuration: animationSpeed,
+      withDuration: withAnimation ? animationSpeed : 0,
       delay: 0,
       usingSpringWithDamping: springAnimation ? 0.7 : 1,
       initialSpringVelocity: springAnimation ? 0.8 : 1,
