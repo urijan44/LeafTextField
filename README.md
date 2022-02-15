@@ -15,6 +15,7 @@ textField.setImage(UIImage(named: "pikases"), UIImage(named: "pikases-leaf"))
 textField.imageSize = 24
 textField.animationSpeed = 0.5
 textField.springAnimation = true
+textField.animateImageOffset = 1
 ```
 
 ![](preview.gif)
