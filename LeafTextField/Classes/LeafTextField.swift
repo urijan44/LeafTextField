@@ -41,6 +41,16 @@ open class LeafTextField: UITextField {
     }
   }
 
+  @IBInspectable
+
+  /// ImageOffset
+  ///   <-- - {image}  + -->
+  public var animateImageOffset: CGFloat = 0 {
+    didSet {
+      imageViewTrailingConstraint.constant = -animateImageOffset
+    }
+  }
+
   private let imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
@@ -51,12 +61,13 @@ open class LeafTextField: UITextField {
   private var imageViewCenterConstraint: NSLayoutConstraint!
   private var imageViewWidthConstraint: NSLayoutConstraint!
   private var imageViewHeightConstraint: NSLayoutConstraint!
+  private var imageViewTrailingConstraint: NSLayoutConstraint!
 
   @IBInspectable
-  public var inactiveImage: UIImage? = UIImage(systemName: "star")
+  public var inactiveImage: UIImage?
 
   @IBInspectable
-  public var activeImage: UIImage? = UIImage(systemName: "star.fill")
+  public var activeImage: UIImage?
 
 
   @IBInspectable
@@ -70,15 +81,15 @@ open class LeafTextField: UITextField {
   /// Default is true
   public var springAnimation: Bool = true
 
-  private var trailingInset: CGFloat = 8
-  private var viewWidth: CGFloat = 0
-
+  @IBInspectable
   public var imageSize: CGFloat = 24 {
     didSet {
       imageViewWidthConstraint.constant = imageSize
       imageViewHeightConstraint.constant = imageSize
     }
   }
+
+  private var viewWidth: CGFloat = 0
 
   public override init(frame: CGRect) {
     super.init(frame: frame)
@@ -101,11 +112,12 @@ open class LeafTextField: UITextField {
   }
 
   private func updateImage() {
-    if (text ?? "").isEmpty && imageViewCenterConstraint.constant == 0 {
+    if (text ?? "").isEmpty && imageViewCenterConstraint.isActive == true {
       imageView.image = inactiveImage
     } else {
       imageView.image = activeImage
     }
+    setNeedsDisplay()
   }
 
   open override func prepareForInterfaceBuilder() {
@@ -121,22 +133,22 @@ open class LeafTextField: UITextField {
 
   private func createView() {
     addSubview(imageView)
-
     imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     imageViewWidthConstraint = imageView.widthAnchor.constraint(equalToConstant: imageSize)
     imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: imageSize)
     imageViewCenterConstraint = imageView.centerXAnchor.constraint(equalTo: centerXAnchor)
+    imageViewTrailingConstraint = imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -animateImageOffset)
     imageViewCenterConstraint.isActive = true
     imageViewWidthConstraint.isActive = true
     imageViewHeightConstraint.isActive = true
     imageView.image = inactiveImage
+    viewWidth = bounds.width
   }
 
-  open override func draw(_ rect: CGRect) {
-    super.draw(rect)
-
-    viewWidth = rect.width
-    updateAfterDraw()
+  open override var text: String? {
+    didSet {
+      updateAfterDraw()
+    }
   }
 
   private func updateAfterDraw() {
@@ -151,13 +163,13 @@ open class LeafTextField: UITextField {
 
   open override func textRect(forBounds bounds: CGRect) -> CGRect {
     var bounds = bounds
-    bounds.size.width -= (imageSize * 2)
+    bounds.size.width -= (imageSize + animateImageOffset + 6)
     return bounds
   }
 
   open override func editingRect(forBounds bounds: CGRect) -> CGRect {
     var bounds = bounds
-    bounds.size.width -= (imageSize * 2)
+    bounds.size.width -= (imageSize + animateImageOffset + 6)
     return bounds
   }
 
@@ -170,42 +182,55 @@ open class LeafTextField: UITextField {
   }
 
   private func activeAnimation(withAnimation: Bool = true) {
-    guard imageViewCenterConstraint.constant == 0 else { return }
-    imageViewCenterConstraint.constant = (viewWidth / 2) - (imageSize + trailingInset)
-    UIView.animate(
-      withDuration: withAnimation ? animationSpeed : 0,
-      delay: 0,
-      usingSpringWithDamping: springAnimation ? 0.7 : 1,
-      initialSpringVelocity: springAnimation ? 0.8 : 1,
-      options: .transitionCurlUp) { [unowned self] in
-      self.layoutIfNeeded()
-    } completion: { [unowned self] _ in
-      UIView.transition(
-        with: imageView,
-        duration: 0.2,
-        options: .transitionCrossDissolve) {
-        updateImage()
+    guard imageViewCenterConstraint.isActive == true else { return }
+
+    imageViewCenterConstraint.isActive = false
+    imageViewTrailingConstraint.isActive = true
+    if withAnimation {
+      UIView.animate(
+        withDuration: animationSpeed,
+        delay: 0,
+        usingSpringWithDamping: springAnimation ? 0.7 : 1,
+        initialSpringVelocity: springAnimation ? 0.8 : 1,
+        options: .transitionCurlUp) { [unowned self] in
+        self.layoutIfNeeded()
+      } completion: { [unowned self] _ in
+        UIView.transition(
+          with: imageView,
+          duration: 0.2,
+          options: .transitionCrossDissolve) {
+          updateImage()
+        }
       }
+    } else {
+      updateImage()
+      layoutIfNeeded()
     }
   }
 
   private func inactiveAnimation(withAnimation: Bool = true) {
     guard (text ?? "").isEmpty else { return }
-    imageViewCenterConstraint.constant = 0
-    UIView.animate(
-      withDuration: withAnimation ? animationSpeed : 0,
-      delay: 0,
-      usingSpringWithDamping: springAnimation ? 0.7 : 1,
-      initialSpringVelocity: springAnimation ? 0.8 : 1,
-      options: .transitionCurlUp) { [unowned self] in
-      layoutIfNeeded()
-    } completion: { [unowned self] _ in
-      UIView.transition(
-        with: imageView,
-        duration: 0.1,
-        options: .transitionCrossDissolve) {
-        updateImage()
+    imageViewTrailingConstraint.isActive = false
+    imageViewCenterConstraint.isActive = true
+    if withAnimation {
+      UIView.animate(
+        withDuration: animationSpeed,
+        delay: 0,
+        usingSpringWithDamping: springAnimation ? 0.7 : 1,
+        initialSpringVelocity: springAnimation ? 0.8 : 1,
+        options: .transitionCurlUp) { [unowned self] in
+        layoutIfNeeded()
+      } completion: { [unowned self] _ in
+        UIView.transition(
+          with: imageView,
+          duration: 0.1,
+          options: .transitionCrossDissolve) {
+          updateImage()
+        }
       }
+    } else {
+      layoutIfNeeded()
+      updateImage()
     }
   }
 }
